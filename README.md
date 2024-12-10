@@ -5,7 +5,7 @@ Using a command-line interface, users can input circuit branches containing star
 A Python interpreter must be installed to run.  The SymPy module is also neccesary to use the PCTspice program.  
 To install, open command prompt and type 'pip install sympy'.  This uses Python's native package installer.
 
-PCTspice opens directly into its CLI, and commands can be run at any time.  Type 'HELP' for more information!
+PCTspice opens directly into its CLI, and commands can be run at any time.  Type `HELP` for more information!
 
 This program makes heavy use of ANSI escape codes, which most modern terminal emulators and command lines support.
 These control features like text color and clearing the terminal.  If the text color is white exclusively and the ANSI escape codes are being printed to the screen as text, then commands like 'CLEAR' will not work.
