@@ -476,7 +476,7 @@ def currentCalc(branchArray, results, nodeDict, compName):
 
 def PCTspice():
     run = True
-    print("\033[1;32;40m\nRunning PCTspice circuit analysis!\033[0;32;40m\n\nEnter data below or import text file.\nAll data will be lost when ending the PCTspice session.\nSome commands may not work correctly if not running directly in Python terminal.\n\n\033[1;32;40mType \"\033[1;33;40mHELP\033[1;32;40m\" for help.\n\n────────────────────────────────────────────────────────────────────────────────\033[0m\n")
+    print("\033[1;32;40m\nRunning PCTspice circuit analysis!\033[0;32;40m\n\nEnter data below or import text file.\nAll data will be lost when ending the PCTspice session.\nSome commands may not work correctly if not running directly in Python terminal.\n\n\033[1;32;40mType \033[1;33;40mHELP\033[1;32;40m for help.\n\n────────────────────────────────────────────────────────────────────────────────\033[0m\n")
 
     branchArray = []
     compnentDict = {}
@@ -488,6 +488,8 @@ def PCTspice():
 
         match line.upper():
             case "":
+                pass
+            case "=":
                 pass
             case "END":
                 print("\033[0m")
@@ -502,13 +504,13 @@ def PCTspice():
                 compnentDict = {}
                 nodeIndexDict = {}
                 results = []
-                print("\n\033[1;32;40mMemory cleared.\nRunning PCTspice circuit analysis!\033[0m\n────────────────────────────────────────────────────────────────────────────────\n")
+                print("\n\033[1;32;40mMemory cleared.\nRunning PCTspice circuit analysis!  \033[1;32;40mType \033[1;33;40mHELP\033[1;32;40m for help./n────────────────────────────────────────────────────────────────────────────────\033[0m\n")
             case "CLEAR":
                 print('\033c', end='')
-                print("\033[1;32;40m\nRunning PCTspice circuit analysis!\n\n────────────────────────────────────────────────────────────────────────────────\033[0m\n\n")
+                print("\033[1;32;40m\nRunning PCTspice circuit analysis!  \033[1;32;40mType \033[1;33;40mHELP\033[1;32;40m for help.\n\n────────────────────────────────────────────────────────────────────────────────\033[0m\n\n")
             case "CLS":
                 print('\033c', end='')
-                print("\033[1;32;40m\nRunning PCTspice circuit analysis!\n\n────────────────────────────────────────────────────────────────────────────────\033[0m\n\n")
+                print("\033[1;32;40m\nRunning PCTspice circuit analysis!  \033[1;32;40mType \033[1;33;40mHELP\033[1;32;40m for help.\n\n────────────────────────────────────────────────────────────────────────────────\033[0m\n\n")
             case "PCTSPICE":
                 print("\n\033[1;32;40mPCTspice is already running!\033[0m\n")
             case _:
