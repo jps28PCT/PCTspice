@@ -17,10 +17,12 @@ These control features like text color and clearing the terminal.  If the text c
 At any point during execution of PCTspice, a command or branch description may be entered.
 
 ### Branch Description and Component Entry
-Format:     `[Start node name] [Component name]=[Component value] [End node name]`
+Format:     
+  `[Start node name] [Component name]=[Component value] [End node name]`
 
-  or        `[Start node name] [Component name] [End node name]`
-            `[Component name]=[Component value]`
+  or        
+    `[Start node name] [Component name] [End node name]`
+    `[Component name]=[Component value]`
        
 -  Input is not case-sensitive, except for any engineering notation prefix entered.
 -  The start node is considered the positive terminal of a the component.  Any alphanumeric string less than 5 characters is accepted.  Use 'GND' for reference ground.
@@ -38,9 +40,9 @@ Format:     `[Start node name] [Component name]=[Component value] [End node name
 -   Component values should be entered in without any unit.
     Engineering notation prefixes can be used immediately after the number with no space.
     Valid prefixes:
-    - '`T`' for tera- (10<sup>12</sup>)               - '`p`' for pico- (10<sup>-12</sup>)
-    - '`G`' for giga- (10<sup>9</sup>)                - '`n`' for nano- (10<sup>-9</sup>)
-    - '`M`' or '`MEG`' for mega- (10<sup>6</sup>)     - '`u`' for micro- (10<sup>-6</sup>)
-    - '`K`' for kilo- (10<sup>6</sup>)                - '`m`' for milli- (10<sup>-3</sup>)        
+    |'`T`' for tera- (10<sup>12</sup>)|'`p`' for pico- (10<sup>-12</sup>)|
+    |'`G`' for giga- (10<sup>9</sup>)|'`n`' for nano- (10<sup>-9</sup>)|
+    |'`M`' or '`MEG`' for mega- (10<sup>6</sup>)|'`u`' for micro- (10<sup>-6</sup>)|
+    |'`K`' for kilo- (10<sup>6</sup>)|'`m`' for milli- (10<sup>-3</sup>)|    
   
 -   The end node is considered the negative terminal of the component.  Any alphanumeric string less than 5 characters is accepted.  Use 'GND' for reference ground.
