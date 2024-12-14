@@ -20,17 +20,20 @@ These control features like text color and clearing the terminal.  If the text c
 ## Inputs and Commands
 At any point during execution of PCTspice, a command or branch description may be entered.
 
+<details>
+<summary>Branch Description and Component Entry</summary>
+
 ### Branch Description and Component Entry
 Format:     
-  `[Start node name] [Component name]=[Component value] [End node name]`
-
-  or        
-    `[Start node name] [Component name] [End node name]`
-    `[Component name]=[Component value]`
+    `[Start node] [Component]=[Value] [End node]`<BR />
+ or        
+    `[Start node] [Component] [End node]`<BR />
+    `[Component]=[Value]`
        
 -  Input is not case-sensitive, except for any engineering notation prefix entered.
--  The start node is considered the positive terminal of a the component.  Any alphanumeric string less than 5 characters is accepted.  Use 'GND' for reference ground.
--  The component name must be the type of component and a unique number; Like 'R1' or 'V2'.  Any length of number can be used, and they do not have to be sequential.
+-  The start node is considered the positive terminal of a the component.  Any alphanumeric string less than 5 characters is accepted.  Use '`GND`' for reference ground.
+-  The component name must be the type of component and a unique number; Like 'R1' or 'V2'.  Any length of number can be used, and they do not have to be sequential.<BR />
+
    Types of components:
       - '`V`' for ideal DC voltage source.
       - '`I`' for ideal DC current source.
@@ -42,7 +45,8 @@ Format:
       - 'Ohms' for resistor.
      
 -   Component values should be entered in without any unit.
-    Engineering notation prefixes can be used immediately after the number with no space.
+    Engineering notation prefixes can be used immediately after the number with no space.<BR />
+    
     Valid prefixes:
     | Symbol | Prefix | Power | | Symbol | Prefix | Power |
     | :---: | :--- | :---: | --- | :---: | :--- | :---: |
@@ -51,7 +55,9 @@ Format:
     | '`M`' | mega- | 10<sup>6</sup> | | '`u`' | micro- | 10<sup>-6</sup> |
     | '`K`' | kilo- | 10<sup>6</sup>  | | '`m`' | milli- | 10<sup>-3</sup> |
     
-    Examples: `R1=10K`   creates a resistor R1 with a value of 10 kilo-ohms.
-              `I2=530u`  creates a current source I2 with a value of 530 microamps.
+    Examples:<BR />
+      `R1=10K`   creates a resistor R1 with a value of 10 kilo-ohms. <BR />
+      `I2=530u`  creates a current source I2 with a value of 530 microamps.
   
--   The end node is considered the negative terminal of the component.  Any alphanumeric string less than 5 characters is accepted.  Use 'GND' for reference ground.
+-   The end node is considered the negative terminal of the component.  Any alphanumeric string less than 5 characters is accepted.  Use '`GND`' for reference ground.
+</details>
