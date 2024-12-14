@@ -7,6 +7,10 @@ PCTspice is designed to be similar to traditional SPICE CLI programs while impro
 A Python interpreter must be installed to run.  The SymPy module is also neccesary to use the PCTspice program.  
 To install, open command prompt and type 'pip install sympy'.  This uses Python's native package installer.
 
+> [!NOTE]
+> PCTspice requires Python 3.11 or later to function.
+> SymPy 1.13.3 or later is also required to run.
+
 PCTspice opens directly into its CLI, and commands can be run at any time.  Type `HELP` for more information!
 
 This program makes heavy use of ANSI escape codes, which most modern terminal emulators and command lines support.
