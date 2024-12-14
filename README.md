@@ -41,7 +41,7 @@ Format:
     Engineering notation prefixes can be used immediately after the number with no space.
     Valid prefixes:
     | Symbol | Prefix | Power | | Symbol | Prefix | Power |
-    | :---: | :--- | :---: | :---: | | :--- | :---: |
+    | :---: | :--- | :---: | :---: | --- | :--- | :---: |
     | '`T`' | tera- | 10<sup>12</sup> | | '`p`' | pico- | 10<sup>-12</sup> |
     | '`G`' | giga- | 10<sup>9</sup> | | '`n`' | nano- | 10<sup>-9</sup> |
     | '`M`' | mega- | 10<sup>6</sup> | | '`u`' | micro- | 10<sup>-6</sup> |
