@@ -40,9 +40,13 @@ Format:
 -   Component values should be entered in without any unit.
     Engineering notation prefixes can be used immediately after the number with no space.
     Valid prefixes:
-    |'`T`' for tera- (10<sup>12</sup>)|'`p`' for pico- (10<sup>-12</sup>)|
-    |'`G`' for giga- (10<sup>9</sup>)|'`n`' for nano- (10<sup>-9</sup>)|
-    |'`M`' or '`MEG`' for mega- (10<sup>6</sup>)|'`u`' for micro- (10<sup>-6</sup>)|
-    |'`K`' for kilo- (10<sup>6</sup>)|'`m`' for milli- (10<sup>-3</sup>)|    
+    | Symbol | Prefix | Power | Symbol | Prefix | Power |
+    | :---: | :--- | :---: | :---: | :--- | :---: |
+    | '`T`' | tera- | 10<sup>12</sup> | '`p`' | pico- | 10<sup>-12</sup> |
+    | '`G`' | giga- | 10<sup>9</sup> | '`n`' | nano- | 10<sup>-9</sup> |
+    | '`M`' | mega- | 10<sup>6</sup> | '`u`' | micro- | 10<sup>-6</sup> |
+    | '`K`' | kilo- | 10<sup>6</sup>  | '`m`' | milli- | 10<sup>-3</sup> |
+    Examples: `R1=10K`   creates a resistor R1 with a value of 10 kilo-ohms.
+              `I2=530u`  creates a current source I2 with a value of 530 microamps.
   
 -   The end node is considered the negative terminal of the component.  Any alphanumeric string less than 5 characters is accepted.  Use 'GND' for reference ground.
