@@ -23,7 +23,9 @@ These control features like text color and clearing the terminal.  If the text c
 At any point during execution of PCTspice, a command or branch description may be entered.
 
 <details>
-<summary>Branch Description and Component Entry</summary>
+<summary>
+## Branch Description and Component Entry
+</summary>
        
 Format:     
     `[Start node] [Component]=[Value] [End node]`<BR />
