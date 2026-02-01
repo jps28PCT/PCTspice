@@ -54,7 +54,7 @@ Format:
     | '`T`' | tera- | 10<sup>12</sup> | | '`p`' | pico- | 10<sup>-12</sup> |
     | '`G`' | giga- | 10<sup>9</sup> | | '`n`' | nano- | 10<sup>-9</sup> |
     | '`M`'<br />'`MEG`' | mega- | 10<sup>6</sup> | | '`u`' | micro- | 10<sup>-6</sup> |
-    | '`K`' | kilo- | 10<sup>6</sup>  | | '`m`' | milli- | 10<sup>-3</sup> |
+    | '`K`' | kilo- | 10<sup>3</sup>  | | '`m`' | milli- | 10<sup>-3</sup> |
     
     Examples:<BR />
       `R1=10K`   creates a resistor R1 with a value of 10 kilo-ohms. <BR />
